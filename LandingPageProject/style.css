@@ -1,0 +1,414 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    font-family: 'Playfair', 'sans-serif';
+    box-sizing: border-box;
+}
+
+header {
+    
+}
+
+#navbar {
+    margin: 0 auto; 
+    /* ie top & bottom is 0 & give the margin however the width is   */
+    
+    width: 80%;
+    /* ie 80% of the row so it won't take full screen  */
+
+    height: 10vh;
+    /* ie take 10% of height of viewport ( ie displayed screen ) */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container > h2 {
+    margin-left: 8px;
+}
+
+#logo-container .fa-shield-halved {
+    color: #ce0101;
+    font-size: 20px;
+}
+
+#logo-container .fa-shield-halved:hover {
+    color: #ff0000;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#nav-items {
+    display: flex;
+    width: 500px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 500;
+    /* font weight chosen cuz google font link has this range ie 400...900  */
+}
+
+#nav-items li {
+    cursor:pointer;
+    /* if we wrote cursor:pointer; in #nav-items only then the whole block would be pointed(try it out) */
+}
+
+#mainHeader {
+    display: flex;
+    color:#ffffff;
+    position: relative;
+}
+
+#mainHeader .text {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 40px;
+    left: 5%;
+    color: #ffffff;
+}
+
+#mainHeader .text .bigText {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+ .gradient1:hover {
+    background-image: linear-gradient(45deg, #d69509 40%, #835a02 30%, #ffb120 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 42px;
+}
+
+#mainHeader .text #overview {
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 100px;
+}
+
+#mainHeader .text #overview .overviewItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainHeader .text #overview .overviewItems>h3 {
+    font-weight: 800;
+    font-size: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+ .gradient2 {
+    color: #ff00f2;
+    background-color: #1a1a4f;
+    /* border: 1px solid #8a2be2; */
+    transform: skewX(-15deg);
+}
+
+ #bigGradient {
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #ff04ff 20%, #54177a 50%, #c402ff 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Above 3 lines are so that the color is applied to element, not the bg  */
+
+    display: inline;
+    background-color: #111111;
+}
+
+ #mainHeader #bigGradient:hover {
+    font-size: 44px;
+}
+
+#mainHeader .text > p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn1 {
+    border: 2px solid #1a1a4f;
+    color: #ff00f2;
+    margin: 10px 20px;
+    padding: 10px 30px;
+    transform: skewX(-20deg);
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn {
+    background: #1a1a4f;
+    background: linear-gradient(45deg, #7d63f1 6%, #2c2c94 28%, #f805d0 97%);
+    /* The above bg will work if linear-gradient doesnt work  */
+
+    margin: 10px 20px;
+    padding: 10px 30px;
+    transform: skewX(-20deg);    
+    cursor: pointer;
+}
+
+
+
+#mainHeader .image {
+    flex: 1; /* This will make the image take up the remaining space */
+    display: flex;
+    justify-content:flex-end; 
+    align-items: center; /* Center the image vertically within its container */
+    z-index: -20;
+    mix-blend-mode: difference;
+}
+
+#mainHeader .image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+    margin-top: -40vh;
+    /* if we used margin-top in "#mainHeader .image" and not "#mainHeader .image img" it'd be a different case of positioning */
+}
+
+.band {
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 25px;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    background-color: #ffffff50;
+    transform: rotate(-3deg);
+    box-shadow: 0 80px 32px 0 rgba(31,38,135,0.37);
+    border:#ffffff50 ;
+    backdrop-filter: blur(4px);
+    margin-top: -10%;
+}
+
+.band .fa-free-code-camp {
+    /* background: linear-gradient(45deg, #ff04ff 20%, #54177a 50%, #c402ff 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+
+    color: #470044;
+}
+
+.chooseSection  {
+    color: #fff;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.chooseSection .chooseTitle {
+    display: flex;
+    font-weight: 900;
+    margin: 0;
+    margin-right: px;
+    font-size: 40px;
+    justify-content:space-around;
+    gap: 35px;
+    background-image: linear-gradient(45deg, #d69509 40%, #835a02 30%, #ffb120 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.chooseSection .chooseDescription {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-weight: 100;
+}
+
+.chooseImage {
+    display: flex;
+    justify-content: space-evenly;
+    mix-blend-mode: exclusion;
+    align-items: center;
+
+}
+
+.chooseImage img {
+    max-width: 20%;
+    max-height: 33%;
+}
+
+.discoverSection  {
+    width: 70%;
+    display: flex;
+    margin: 100px auto;
+    color:#ffffff;
+    border: 2px solid #ffffff40;
+    border-radius: 10px;
+    box-shadow: 0 30px 32px 0 rgba(88, 15, 110, 0.37);
+}
+
+.discoverSection .discoverImage {
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    z-index: -3;
+    align-items: center;
+}
+
+.discoverImage img {
+    max-width: 70%;
+    max-height: 50%;
+
+    margin-top: -20px;
+    /* To lift the image up  */
+}
+
+.discoverText {
+    position: relative;
+}
+
+.discoverSection .discoverText .discoverTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Above 3 lines are to center align using flexbox  */
+
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* Above comment is center align using other way  */
+    display: flex;
+    justify-content: space-around;
+    font-weight: 900;
+    align-items: center;
+    font-size: 40px;
+
+
+    background: #e48900;
+    background: linear-gradient(45deg, #a80ca0 40%, #2f0235 30%, #ad0984 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.discoverSection .discoverText .discoverDescription {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 40%;
+}
+
+.demoCardsSection {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.demoCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.demoCard {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px 15px;
+    border: 2px solid #ffffff25;
+    border-radius: 10px;
+    background: #242424;
+    box-shadow: 0 30px 32px 0 rgba(88, 15, 110, 0.37);
+    backdrop-filter: blur(4px);
+    margin: 10px;
+}
+
+.demoCard > img {
+    width: 100%;
+    height: 50%;
+}
+
+.demoProfDetail {
+    display: flex;
+    align-self: self-start;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.demoProfDetail > img {
+    width: 40px;
+    height: 40px;
+}
+
+.demoCard > h5 {
+    font-size: 25px;
+    background-image: linear-gradient(45deg, #d69509 40%, #835a02 30%, #ffb120 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    margin: 0;
+    /* So that img doesn't come out of container  */
+}
+
+.demoCard > p {
+    margin: 0;
+}
+
+footer {
+    background : url(https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=600);
+    mix-blend-mode: color-dodge;
+    margin-top: 50px;
+    height: 300px;
+    display: flex;
+    color: #ffffff;
+}
+
+footer .Thought, .About {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+footer .ContactUs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px;
+}
+
+footer > h3 > span {
+    color: #e5ff00;
+    
+} 
