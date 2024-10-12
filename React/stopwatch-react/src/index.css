@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #333232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(275deg, #030303 6%, #330138 28%, #000000 90%);
+}
+.outer-watch-container{
+  height: 100vh;
+}
+.watch-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000;
+  font-size: 50px;
+  background-color: #be9999;
+  border-radius: 20px;
+  padding: 30px;
+}
+.display{
+  font-family: monospace;
+  font-weight: 600;
+  color: #1c1d1d;
+  text-shadow: 2px 2px 4px #050404;
+}
+.controls button{
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding:10px;
+  border-radius: 20px;
+}
+.controls .Start{
+  background-color: #1b941b;
+}
+.controls .Stop{
+  background-color: #b41414;
+}
+.controls .Reset{
+  background-color: #214c8d;
+}
+.controls .Start:hover{
+  background-color: #1fc51f;
+}
+.controls .Stop:hover{
+  background-color: #e91717;
+}
+.controls .Reset:hover{
+  background-color: #0e5ace;
+}
+.controls .Start:active{
+  background-color: #028a02;
+}
+.controls .Stop:active{
+  background-color: #940404;
+}
+.controls .Reset:active{
+  background-color: #033d94;
+}
